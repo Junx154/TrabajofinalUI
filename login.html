@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora 2.0 - Registro</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Fuente moderna Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5 (necesario para el footer) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Principal (Rojo) -->
+    <header class="main-header">
+        <div class="header-top">
+            <div class="header-logo">
+                <img src="img/nexora_logo.png" alt="Nexora Logo">
+            </div>
+            <nav class="main-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Registro</a>
+                <a href="login.html">Login</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Productos</a>
+                <a href="#">Promociones</a>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <div class="ofertas-container">
+                <span class="rayo">⚡</span>
+                <span class="ofertas-texto">Ofertas relámpago</span>
+                <span class="ofertas-link">Ofertas por tiempo limitado ></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-registro">
+        
+        <!-- Caja del Formulario Modernizada -->
+        <div class="registro-box">
+            <div class="form-header">
+                <h2>Crea tu cuenta</h2>
+                <p>Únete a Nexora 2.0 y descubre una nueva forma de comprar.</p>
+            </div>
+            
+            <form action="#" class="registro-form">
+                
+                <div class="input-group">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" id="retype" name="retype" placeholder="Repetir contraseña" required>
+                </div>
+
+                <div class="terms-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="terms">Acepto los <a href="#">Términos de uso</a> y la <a href="#">Política de privacidad</a>.</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrarme</button>
+
+                <div class="divider">
+                    <span>o regístrate con</span>
+                </div>
+
+                <div class="social-buttons">
+                    <button type="button" class="btn-social btn-facebook">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </button>
+                    <button type="button" class="btn-social btn-google">
+                        <i class="fa-brands fa-google"></i> Google
+                    </button>
+                </div>
+                
+                <p class="login-link">¿Ya tienes una cuenta? <a href="#">Inicia sesión aquí</a></p>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) - NEXORA -->
+    <footer class="site-footer pt-5 pb-4">
+      <div class="container">
+        
+        <div class="row align-items-center justify-content-between mb-5 g-4">
+          <div class="col-lg-6">
+            <div class="footer__brand">
+              <img src="img/nexora_logo.png" alt="Logotipo Nexora" class="mb-3 footer__logo" style="filter: brightness(0) invert(1);">
+              <p class="footer__tagline mb-0">
+                En NEXORA queremos brindarte la mejor experiencia de compras online. 
+                <span class="text-accent fw-medium">¡Gracias por preferirnos!</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 text-lg-end">
+            <p class="small text-uppercase tracking-wider mb-2 opacity-50 text-white" style="font-size: 11px;">Medios de pago autorizados</p>
+            <div class="footer__payments d-flex flex-wrap gap-4 justify-content-lg-end align-items-center">
+                <span title="Visa"><img src="img/visa.svg" alt="Visa"></span>
+                <span title="Mastercard"><img src="img/mc.svg" alt="Mastercard"></span>
+                <span title="American Express"><img src="img/amex.svg" alt="Amex"></span>
+                <span title="Dinners club"><img src="img/diners.svg" alt="Diners"></span>
+                <span title="Yape"><img src="img/yape.svg" alt="Yape"></span>
+                <span title="Plin"><img src="img/plin.svg" alt="Plin"></span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer__divisor my-4">
+
+        <!-- Fila Central: Navegación y Columnas -->
+        <div class="row g-4 pt-3">
+          
+          <!-- Columna 1: Mapa del Sitio -->
+          <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+            <h5 class="footer__titulo mb-4">Mapa del sitio</h5>
+            <ul class="list-unstyled footer__lista">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contactos.html">Promociones</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 2: Categorías / Productos -->
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 order-sm-first order-md-0">
+            <h5 class="footer__titulo mb-4">Secciones</h5>
+            <div class="row">
+              <div class="col-6">
+                <ul class="list-unstyled footer__lista">
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="login.html">Registro</a></li>
+                  <li><a href="pagos.html">Pagos</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled footer__lista">
+                  <li><a href="#">Soporte Técnico</a></li>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna 3: Información Legal & Calidad -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <h5 class="footer__titulo mb-4">Transparencia</h5>
+            <ul class="list-unstyled footer__lista mb-4">
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+              <li><a href="#">Derechos de Consumidor</a></li>
+            </ul>
+            <h5 class="footer__titulo mb-2" style="font-size: 13px;">Control de Calidad</h5>
+            <a href="#" class="footer__btn--encuesta text-decoration-none small">
+              <i class="fa-solid fa-star-half-stroke me-1 text-accent"></i> Evalúa tu experiencia
+            </a>
+          </div>
+
+          <!-- Columna 4: Canales Digitales y Libro de Reclamaciones -->
+          <div class="col-6 col-sm-6 col-md-12 col-lg-3">
+            <h5 class="footer__titulo mb-4">Síguenos</h5>
+            <div class="d-flex gap-3 mb-4">
+              <a href="#" class="footer__red-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer__red-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer__red-social" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            
+            <a href="#" class="footer__reclamaciones d-flex align-items-center gap-3 p-3 text-decoration-none">
+              <i class="fa-solid fa-book-open fs-4"></i>
+              <div>
+                <div class="footer__reclamaciones-texto--superior">LIBRO DE</div>
+                <div class="footer__reclamaciones-texto--inferior">RECLAMACIONES</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Fila Inferior: Créditos -->
+        <div class="row mt-5 pt-3 border-top border-muted-subtle">
+          <div class="col text-center opacity-50">
+            <p class="small mb-0" style="font-size: 12px; letter-spacing: 0.5px;">
+              &copy; 2026 NEXORA. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEu8A1GJ9C7L7cO3yG0m2sQhLzq0" crossorigin="anonymous"></script>
+
+</body>
+</html>
