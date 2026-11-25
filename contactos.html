@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Web SENATI</title>
+    <title>Proyecto Web SENATI - Contactos</title>
 
     <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -32,335 +32,297 @@
     <link rel="stylesheet" href="css/contactos.css" />
   </head>
   <body>
- <!-- INICIO DE MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/nexora_logo.png" class="img-fluid" width="120" height="50" alt="Logo NEXORA" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse texto__navegacion" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="nosotros.html">NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="contactos.html">PROMOCIONES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="contactos.html">CONTACTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link texto__barra" href="login.html">REGISTRO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active texto__activo" aria-current="page" href="pagos.html">PAGOS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- FIN DE MENU -->
-     <!-- INICIO DE CARRUSEL -->
+      <!-- INICIO DE MENU UNIFICADO -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">
+             <img src="img/nexora_logo.png" class="img-fluid" width="120" height="50" alt="Logo NEXORA">
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse texto__navegacion" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="index.html">INICIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="nosotros.html">NOSOTROS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="contactos.html">PROMOCIONES</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active texto__activo" aria-current="page" href="contactos.html">CONTACTOS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="productos.html">PRODUCTOS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="login.html">REGISTRO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link texto__barra" href="pagos.html">PAGOS</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+       <!-- FIN DE MENU -->
 
+     <!-- INICIO DE CARRUSEL -->
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/banner nexora.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/banner nexora.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/banner nexora.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br><br>
-  <!-- FIN DEL CARRUSEL -->
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="img/banner nexora.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>First slide label</h5>
+           <p>Some representative placeholder content for the first slide.</p>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="img/banner nexora.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Second slide label</h5>
+           <p>Some representative placeholder content for the second slide.</p>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="img/banner nexora.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Third slide label</h5>
+           <p>Some representative placeholder content for the third slide.</p>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+   <br><br>
+   <!-- FIN DEL CARRUSEL -->
 
    <h1 class="titulo__arriba">Estamos aqui para ayudarte</h1>
-<p class="subtitulo__arriba">En NEXORA queremos brindartela mejor experiencia de compra .
-</p>
-<p class="subtitulo2__arriba">Escribenos y resolveremos tus dudas.
-</p>
-<br><br><br>
+   <p class="subtitulo__arriba">En NEXORA queremos brindarte la mejor experiencia de compra.</p>
+   <p class="subtitulo2__arriba">Escríbenos y resolveremos tus dudas.</p>
+   <br><br><br>
 
      <!-- Beneficios -->
+   <main class="container">
+     <div class="cards__grid">
+       <div class="card">
+         <div class="card__img">
+           <a href="#"><img src="img/card1.png" alt=""></a>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card__img">
+           <a href="#"><img src="img/card2.png" alt=""></a>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card__img">
+           <a href="#"><img src="img/card3.png" alt=""></a>
+         </div>
+       </div>
+       <div class="card">
+         <div class="card__img">
+           <a href="#"><img src="img/card4.png" alt=""></a>
+         </div>
+       </div>
+     </div>
+   </main>
+   <!-- Fin Beneficios -->
 
-  <main class="container">
+   <h1 class="titulo__abajo">Contactanos!</h1>
 
-    <div class="cards__grid">
-      <div class="card">
-
-        <div class="card__img">
-          <a href="#"><img src="img/card1.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="card">
-
-        <div class="card__img">
-          <a href="#"><img src="img/card2.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="card">
-
-        <div class="card__img">
-          <a href="#"><img src="img/card3.png" alt=""></a>
-        </div>
-      </div>
-
-      <div class="card">
-
-        <div class="card__img">
-          <a href="#"><img src="img/card4.png" alt=""></a>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Fin Beneficios -->
-<h1 class="titulo__abajo">Contactanos!</h1>
-
-
-<!-- CONTENEDOR PRINCIPAL PARA FORMULARIO Y ACORDEÓN (LADO A LADO) -->
-<div class="contenedor">
-    
-    <!-- Lado izquierdo: Formulario -->
-    <div class="caja-formulario">
-      <h2 class="titulo2__abajo">Envianos un mensaje</h2>
-      
-      <form>
-        <div class="fila-inputs">
-          <input type="text" placeholder="Nombre completo">
-          <input type="email" placeholder="Correo electronico">
-        </div>
-
-        <div class="fila-inputs">
-          <input type="text" placeholder="Numero de Telefono">
-          <input type="text" placeholder="Numero de Pedido">
-        </div>
-
-        <div class="caja-boton">
-          <button type="submit" class="boton-rojo">ENVIAR</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Lado derecho: Preguntas (Acordeón corregido) -->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <h2>¿Tienes dudas rapidas?</h2>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            ¿Como puedo realizar un pedido?
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Realizar un pedido en NEXORA es muy sencillo. Solo navega por nuestra tienda, selecciona los productos que deseas, agrégalos al carrito de compras y sigue los pasos indicados para completar tus datos y método de pago. ¡Así de fácil!</div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            ¿Cuanto demora el pedido?
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">El tiempo de entrega estándar es de 24 a 48 horas hábiles para Lima Metropolitana. Para envíos a provincia, el plazo puede variar entre 3 a 5 días hábiles dependiendo de la agencia de transporte y tu ubicación exacta.</div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            ¿Como veo el estado del pedido?
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Una vez que tu compra sea confirmada y despachada, te enviaremos un código de seguimiento a tu correo electrónico registrado. También puedes consultarnos directamente a través de nuestro WhatsApp de atención al cliente.</div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            ¿Como solicito una devolucion?
-          </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Si necesitas realizar una devolución, puedes comunicarte con nosotros escribiéndonos al correo soporte@nexora.com o rellenando el formulario de contacto con tu número de pedido. Te guiaremos en el proceso siempre que el producto cumpla con nuestras políticas de cambio.</div>
-        </div>
-      </div>
-    </div>
-
-</div> 
-<!-- FIN DEL CONTENEDOR -->
-
-
-<br><br><br><br>
-
-<!-- PIE DE PÁGINA (FOOTER) - NEXORA -->
-     <footer class="site-footer pt-5 pb-4">
-       <div class="container">
+   <!-- CONTENEDOR PRINCIPAL PARA FORMULARIO Y ACORDEÓN -->
+   <div class="contenedor">
+       <!-- Lado izquierdo: Formulario -->
+       <div class="caja-formulario">
+         <h2 class="titulo2__abajo">Envianos un mensaje</h2>
          
-         <div class="row align-items-center justify-content-between mb-5 g-4">
-           <div class="col-lg-6">
-             <div class="footer__brand">
-               <img src="img/nexora logo.png" alt="Logotipo Nexora" class="mb-3 footer__logo" style="filter: brightness(0) invert(1);">
-               <p class="footer__tagline mb-0">
-                 En NEXORA queremos brindarte la mejor experiencia de compras online. 
-                 <span class="text-accent fw-medium">¡Gracias por preferirnos!</span>
-               </p>
-             </div>
+         <form>
+           <div class="fila-inputs">
+             <input type="text" placeholder="Nombre completo">
+             <input type="email" placeholder="Correo electronico">
            </div>
-           
-           <div class="col-lg-6 text-lg-end">
-             <p class="small text-uppercase tracking-wider mb-2 opacity-50 text-white" style="font-size: 11px;">Medios de pago autorizados</p>
-             <div class="footer__payments d-flex flex-wrap gap-4 justify-content-lg-end align-items-center">
-                 <span title="Visa"><img src="img/visa.svg" alt="Visa"></span>
-                 <span title="Mastercard"><img src="img/mc.svg" alt="Mastercard"></span>
-                 <span title="American Express"><img src="img/amex.svg" alt="Amex"></span>
-                 <span title="Dinners club"><img src="img/diners.svg" alt="Diners"></span>
-                 <span title="Yape"><img src="img/yape.svg" alt="Yape"></span>
-                 <span title="Plin"><img src="img/plin.svg" alt="Plin"></span>
-             </div>
+
+           <div class="fila-inputs">
+             <input type="text" placeholder="Numero de Telefono">
+             <input type="text" placeholder="Numero de Pedido">
+           </div>
+
+           <div class="caja-boton">
+             <button type="submit" class="boton-rojo">ENVIAR</button>
+           </div>
+         </form>
+       </div>
+
+       <!-- Lado derecho: Preguntas (Acordeón) -->
+       <div class="accordion accordion-flush caja-dudas" id="accordionFlushExample">
+         <h2>¿Tienes dudas rapidas?</h2>
+
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="flush-headingOne">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               ¿Como puedo realizar un pedido?
+             </button>
+           </h2>
+           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+             <div class="accordion-body">Realizar un pedido en NEXORA es muy sencillo. Solo navega por nuestra tienda, selecciona los productos que deseas, agrégalos al carrito de compras y sigue los pasos indicados para completar tus datos y método de pago. ¡Así de fácil!</div>
            </div>
          </div>
 
-         <hr class="footer__divisor my-4">
-
-         <!-- Fila Central: Navegación y Columnas -->
-         <div class="row g-4 pt-3">
-           
-           <!-- Columna 1: Mapa del Sitio -->
-           <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-             <h5 class="footer__titulo mb-4">Mapa del sitio</h5>
-             <ul class="list-unstyled footer__lista">
-               <li><a href="index.html">Inicio</a></li>
-               <li><a href="nosotros.html">Nosotros</a></li>
-               <li><a href="contactos.html">Promociones</a></li>
-               <li><a href="contactos.html">Contactos</a></li>
-             </ul>
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="flush-headingTwo">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               ¿Cuanto demora el pedido?
+             </button>
+           </h2>
+           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+             <div class="accordion-body">El tiempo de entrega estándar es de 24 a 48 horas hábiles para Lima Metropolitana. Para envíos a provincia, el plazo puede variar entre 3 a 5 días hábiles dependiendo de la agencia de transporte y tu ubicación exacta.</div>
            </div>
-
-           <!-- Columna 2: Categorías / Productos -->
-           <div class="col-12 col-sm-6 col-md-5 col-lg-4 order-sm-first order-md-0">
-             <h5 class="footer__titulo mb-4">Secciones</h5>
-             <div class="row">
-               <div class="col-6">
-                 <ul class="list-unstyled footer__lista">
-                   <li><a href="productos.html">Productos</a></li>
-                   <li><a href="login.html">Registro</a></li>
-                   <li><a href="pagos.html">Pagos</a></li>
-                 </ul>
-               </div>
-               <div class="col-6">
-                 <ul class="list-unstyled footer__lista">
-                   <li><a href="#">Soporte Técnico</a></li>
-                   <li><a href="#">Preguntas Frecuentes</a></li>
-                 </ul>
-               </div>
-             </div>
-           </div>
-
-           <!-- Columna 3: Información Legal & Calidad -->
-           <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-             <h5 class="footer__titulo mb-4">Transparencia</h5>
-             <ul class="list-unstyled footer__lista mb-4">
-               <li><a href="#">Términos y condiciones</a></li>
-               <li><a href="#">Políticas de privacidad</a></li>
-               <li><a href="#">Derechos de Consumidor</a></li>
-             </ul>
-             <h5 class="footer__titulo mb-2" style="font-size: 13px;">Control de Calidad</h5>
-             <a href="#" class="footer__btn--encuesta text-decoration-none small">
-               <i class="fa-solid fa-star-half-stroke me-1 text-accent"></i> Evalúa tu experiencia
-             </a>
-           </div>
-
-           <!-- Columna 4: Canales Digitales y Libro de Reclamaciones -->
-           <div class="col-6 col-sm-6 col-md-12 col-lg-3">
-             <h5 class="footer__titulo mb-4">Síguenos</h5>
-             <div class="d-flex gap-3 mb-4">
-               <a href="#" class="footer__red-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-               <a href="#" class="footer__red-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-               <a href="#" class="footer__red-social" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-             </div>
-             
-             <a href="#" class="footer__reclamaciones d-flex align-items-center gap-3 p-3 text-decoration-none">
-               <i class="fa-solid fa-book-open fs-4"></i>
-               <div>
-                 <div class="footer__reclamaciones-texto--superior">LIBRO DE</div>
-                 <div class="footer__reclamaciones-texto--inferior">RECLAMACIONES</div>
-               </div>
-             </a>
-           </div>
-
          </div>
 
-         <!-- Fila Inferior: Créditos -->
-         <div class="row mt-5 pt-3 border-top border-muted-subtle">
-           <div class="col text-center opacity-50">
-             <p class="small mb-0" style="font-size: 12px; letter-spacing: 0.5px;">
-               &copy; 2026 NEXORA. Todos los derechos reservados.
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="flush-headingThree">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+               ¿Como veo el estado del pedido?
+             </button>
+           </h2>
+           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+             <div class="accordion-body">Una vez que tu compra sea confirmada y despachada, te enviaremos un código de seguimiento a tu correo electrónico registrado. También puedes consultarnos directamente a través de nuestro WhatsApp de atención al cliente.</div>
+           </div>
+         </div>
+
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="flush-headingFour">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+               ¿Como solicito una devolucion?
+             </button>
+           </h2>
+           <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+             <div class="accordion-body">Si necesitas realizar una devolución, puedes comunicarte con nosotros escribiéndonos al correo soporte@nexora.com o rellenando el formulario de contacto con tu número de pedido. Te guiaremos en el proceso siempre que el producto cumpla con nuestras políticas de cambio.</div>
+           </div>
+         </div>
+       </div>
+   </div> 
+   <!-- FIN DEL CONTENEDOR -->
+
+   <br><br><br><br>
+
+   <!-- PIE DE PÁGINA (FOOTER) - NEXORA -->
+   <footer class="site-footer pt-5 pb-4">
+     <div class="container">
+       <div class="row align-items-center justify-content-between mb-5 g-4">
+         <div class="col-lg-6">
+           <div class="footer__brand">
+             <img src="img/nexora_logo.png" alt="Logotipo Nexora" class="mb-3 footer__logo" style="filter: brightness(0) invert(1);">
+             <p class="footer__tagline mb-0">
+               En NEXORA queremos brindarte la mejor experiencia de compras online. 
+               <span class="text-accent fw-medium">¡Gracias por preferirnos!</span>
              </p>
            </div>
          </div>
-
+         
+         <div class="col-lg-6 text-lg-end">
+           <p class="small text-uppercase tracking-wider mb-2 opacity-50 text-white" style="font-size: 11px;">Medios de pago autorizados</p>
+           <div class="footer__payments d-flex flex-wrap gap-4 justify-content-lg-end align-items-center">
+               <span title="Visa"><img src="img/visa.svg" alt="Visa"></span>
+               <span title="Mastercard"><img src="img/mc.svg" alt="Mastercard"></span>
+               <span title="American Express"><img src="img/amex.svg" alt="Amex"></span>
+               <span title="Dinners club"><img src="img/diners.svg" alt="Diners"></span>
+               <span title="Yape"><img src="img/yape.svg" alt="Yape"></span>
+               <span title="Plin"><img src="img/plin.svg" alt="Plin"></span>
+           </div>
+         </div>
        </div>
-     </footer>
 
+       <hr class="footer__divisor my-4">
 
+       <div class="row g-4 pt-3">
+         <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+           <h5 class="footer__titulo mb-4">Mapa del sitio</h5>
+           <ul class="list-unstyled footer__lista">
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="nosotros.html">Nosotros</a></li>
+             <li><a href="contactos.html">Promociones</a></li>
+             <li><a href="contactos.html">Contactos</a></li>
+           </ul>
+         </div>
 
+         <div class="col-12 col-sm-6 col-md-5 col-lg-4 order-sm-first order-md-0">
+           <h5 class="footer__titulo mb-4">Secciones</h5>
+           <div class="row">
+             <div class="col-6">
+               <ul class="list-unstyled footer__lista">
+                 <li><a href="productos.html">Productos</a></li>
+                 <li><a href="login.html">Registro</a></li>
+                 <li><a href="pagos.html">Pagos</a></li>
+               </ul>
+             </div>
+             <div class="col-6">
+               <ul class="list-unstyled footer__lista">
+                 <li><a href="#">Soporte Técnico</a></li>
+                 <li><a href="#">Preguntas Frecuentes</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
 
-     <!-- JAVASCRIPT DE BOOSTRAP -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+           <h5 class="footer__titulo mb-4">Transparencia</h5>
+           <ul class="list-unstyled footer__lista mb-4">
+             <li><a href="#">Términos y condiciones</a></li>
+             <li><a href="#">Políticas de privacidad</a></li>
+             <li><a href="#">Derechos de Consumidor</a></li>
+           </ul>
+           <h5 class="footer__titulo mb-2" style="font-size: 13px;">Control de Calidad</h5>
+           <a href="#" class="footer__btn text-decoration-none small">
+             <i class="fa-solid fa-star-half-stroke me-1 text-accent"></i> Evalúa tu experiencia
+           </a>
+         </div>
 
+         <div class="col-6 col-sm-6 col-md-12 col-lg-3">
+           <h5 class="footer__titulo mb-4">Síguenos</h5>
+           <div class="d-flex gap-3 mb-4">
+             <a href="#" class="footer__red" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             <a href="#" class="footer__red" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#" class="footer__red" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+           </div>
+           
+           <a href="#" class="footer__reclamaciones d-flex align-items-center gap-3 p-3 text-decoration-none">
+             <i class="fa-solid fa-book-open fs-4"></i>
+             <div>
+               <div class="reclamaciones__arriba">LIBRO DE</div>
+               <div class="reclamaciones__abajo">RECLAMACIONES</div>
+             </div>
+           </a>
+         </div>
+       </div>
+
+       <div class="row mt-5 pt-3 border-top border-muted-subtle">
+         <div class="col text-center opacity-50">
+           <p class="small mb-0" style="font-size: 12px; letter-spacing: 0.5px;">
+             &copy; 2026 NEXORA. Todos los derechos reservados.
+           </p>
+         </div>
+       </div>
+     </div>
+   </footer>
+
+   <!-- JAVASCRIPT DE BOOSTRAP -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

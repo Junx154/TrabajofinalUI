@@ -602,3 +602,27 @@ body {
     width: 100%;
   }
 }
+/* EFECTO HOVER PARA LOS ENLACES DEL MENÚ */
+.texto__barra {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.texto__barra:hover {
+  color: var(--colorPrimario) !important;
+}
+
+.texto__barra::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--colorPrimario);
+  transition: width 0.3s ease-in-out;
+}
+
+.texto__barra:hover::after {
+  width: 100%;
+}
