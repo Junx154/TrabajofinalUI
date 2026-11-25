@@ -1,5 +1,4 @@
 /* VARIABLES CSS */
-/* EL ROOT ES EL SELECTOR PADRE */
 :root {
     --colorPrimario: #EC111A;
     --colorSecundario: #082BA5;
@@ -10,7 +9,6 @@
     --colorbordes: #DFE0E0;
 }
 
-/* SELECTOR UNIVERSAL CORREGIDO */
 * {
     padding: 0;
     margin: 0;
@@ -25,8 +23,18 @@ body {
   color: var(--colorParrafos);
 }
 
-.texto__barra{
-    color: var(--colorPrimario);
+/* MENÚ UNIFICADO */
+.texto__barra {
+  color: var(--colorTitulos) !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.texto__activo {
+  color: var(--colorPrimario) !important;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid var(--colorPrimario);
 }
 
 /* INICIO DE CARDS */
@@ -87,11 +95,9 @@ body {
 .titulo2__abajo {
   font-size: 24px;
   font-weight: 600;
- 
   color: var(--colorTitulos);
   border-bottom: 2px solid var(--colorTerciario);
   padding-bottom: 4px;
-
 }
 
 /* Filas de los inputs */
@@ -181,7 +187,7 @@ body {
 }
 
 /* ==========================================================================
-   FOOTER (ADAPTADO A NEXORA)
+   FOOTER (BEM DE DOS ASPECTOS Y ESTILO PAGOS)
    ========================================================================== */
 
 .site-footer {
@@ -221,7 +227,6 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Enlaces del Listado de Navegación */
 .footer__lista li {
   margin-bottom: 10px;
 }
@@ -240,7 +245,6 @@ body {
   padding-left: 4px;
 }
 
-/* Pasarelas de Pago */
 .footer__payments span img {
   height: 28px;
   width: auto;
@@ -252,20 +256,19 @@ body {
   opacity: 1;
 }
 
-/* Enlace a Encuestas */
-.footer__btn--encuesta {
+.footer__btn {
   color: #fff;
   opacity: 0.8;
   display: inline-flex;
   align-items: center;
   transition: color 0.2s;
 }
-.footer__btn--encuesta:hover {
+
+.footer__btn:hover {
   color: var(--colorPrimario);
 }
 
-/* Redes Sociales */
-.footer__red-social {
+.footer__red {
   width: 38px;
   height: 38px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -279,14 +282,13 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-.footer__red-social:hover {
+.footer__red:hover {
   background-color: var(--colorPrimario);
   border-color: var(--colorPrimario);
   color: #fff;
   transform: translateY(-3px);
 }
 
-/* Libro de Reclamaciones */
 .footer__reclamaciones {
   border: 1px solid rgba(255, 255, 255, 0.15);
   background-color: transparent;
@@ -305,14 +307,14 @@ body {
   background-color: rgba(236, 17, 26, 0.05);
 }
 
-.footer__reclamaciones-texto--superior {
+.reclamaciones__arriba {
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 1px;
   opacity: 0.6;
 }
 
-.footer__reclamaciones-texto--inferior {
+.reclamaciones__abajo {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -345,4 +347,29 @@ body {
     flex-direction: column;
     gap: 15px;
   }
+}
+/* EFECTO HOVER PARA LOS ENLACES DEL MENÚ */
+.texto__barra {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.texto__barra:hover {
+  color: var(--colorPrimario) !important;
+}
+
+/* CREA LA RAYA ROJA INFERIOR CON ANIMACIÓN */
+.texto__barra::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--colorPrimario);
+  transition: width 0.3s ease-in-out;
+}
+
+.texto__barra:hover::after {
+  width: 100%;
 }
