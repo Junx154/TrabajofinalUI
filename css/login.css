@@ -1,0 +1,456 @@
+/* --- RESET Y ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variables para el footer (adaptadas a tu paleta) */
+:root {
+    --colorPrimario: #E53935;
+    --colorSombras: #1A1A1A;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.main-header {
+    background-color: #E53935;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo img {
+    max-height: 45px;
+    border-radius: 50%;
+    background: white;
+    padding: 2px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    transition: opacity 0.3s;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+.header-bottom {
+    background-color: #C62828;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container-registro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* --- TARJETA DEL FORMULARIO --- */
+.registro-box {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(229, 57, 53, 0.15);
+    border-top: 5px solid #E53935;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    color: #111;
+    font-weight: 700;
+}
+
+.form-header p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* --- INPUTS --- */
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #E53935;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.1);
+}
+
+/* --- CHECKBOX PERSONALIZADO --- */
+.terms-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all 0.2s;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #E53935;
+    border-color: #E53935;
+}
+
+.checkmark:after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    display: none;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.terms-group label {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.terms-group a {
+    color: #E53935;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- BOTÓN PRINCIPAL --- */
+.btn-submit {
+    background-color: #E53935;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn-submit:hover {
+    background-color: #D32F2F;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* --- DIVISOR Y REDES --- */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #999;
+    font-size: 0.85rem;
+    margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-social:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-facebook i { color: #1877F2; font-size: 1.2rem;}
+.btn-google i { color: #DB4437; font-size: 1.2rem;}
+
+.login-link {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #E53935;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   FOOTER (ADAPTADO A NEXORA)
+   ========================================================================== */
+
+.site-footer {
+    background-color: var(--colorSombras) !important;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 0; /* Ya no hace falta: el body flex empuja el footer al fondo */
+}
+
+.footer__logo {
+    max-height: 50px;
+    display: block;
+}
+
+.footer__tagline {
+    font-size: 13.5px;
+    line-height: 1.6;
+    max-width: 480px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.text-accent {
+    color: var(--colorPrimario) !important;
+}
+
+.footer__titulo {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.footer__divisor {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enlaces del Listado de Navegación */
+.footer__lista li {
+    margin-bottom: 10px;
+}
+
+.footer__lista a {
+    color: #fff;
+    opacity: 0.65;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
+}
+
+.footer__lista a:hover {
+    opacity: 1;
+    color: var(--colorPrimario);
+    padding-left: 4px;
+}
+
+/* Pasarelas de Pago */
+.footer__payments span img {
+    height: 28px;
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.footer__payments span img:hover {
+    opacity: 1;
+}
+
+/* Enlace a Encuestas */
+.footer__btn--encuesta {
+    color: #fff;
+    opacity: 0.8;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+.footer__btn--encuesta:hover {
+    color: var(--colorPrimario);
+}
+
+/* Redes Sociales */
+.footer__red-social {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.25s ease-in-out;
+}
+
+.footer__red-social:hover {
+    background-color: var(--colorPrimario);
+    border-color: var(--colorPrimario);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Libro de Reclamaciones */
+.footer__reclamaciones {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    color: #fff;
+    max-width: 220px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+.footer__reclamaciones i {
+    color: var(--colorPrimario);
+}
+
+.footer__reclamaciones:hover {
+    border-color: var(--colorPrimario);
+    background-color: rgba(236, 17, 26, 0.05);
+}
+
+.footer__reclamaciones-texto--superior {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+.footer__reclamaciones-texto--inferior {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.border-muted-subtle {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    .registro-box {
+        padding: 30px 20px;
+    }
+    
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .main-nav a {
+        margin-left: 0;
+    }
+}
