@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Web SENATI - Pagos</title>
+
+    <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- LIBRERIA DE FUENTES -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FRAMEWORK DE BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- LIBRERIA DE ICONOS -->
+    <script
+      src="https://kit.fontawesome.com/812c8ee19a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="css/pagos.css" />
+  </head>
+  <body>
+    <!-- INICIO DE MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/nexora_logo.png" class="img-fluid" width="120" height="50" alt="Logo NEXORA" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse texto__navegacion" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="contactos.html">PROMOCIONES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="contactos.html">CONTACTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto__barra" href="login.html">REGISTRO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active texto__activo" aria-current="page" href="pagos.html">PAGOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN DE MENU -->
+
+    <!-- BARRA DE PASOS -->
+    <div class="container">
+      <div class="pasos__barra">
+        <div class="pasos__lista">
+          <div class="pasos__completado">1. Carrito <i class="fa-solid fa-check"></i></div>
+          <div class="pasos__activo">2. Método de Pago <i class="fa-solid fa-check"></i></div>
+          <div class="pasos__pendiente">3. Confirmación</div>
+        </div>
+        <div class="pasos__seguridad">
+          <i class="fa-solid fa-lock"></i> Pago Seguro SSL de 256 bits
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENEDOR PRINCIPAL: MÉTODOS Y RESUMEN -->
+    <main class="container">
+      <div class="pago__contenedor">
+        
+        <!-- COLUMNA IZQUIERDA: ACORDEÓN BOOTSTRAP DE MÉTODOS DE PAGO -->
+        <div class="pago__izquierda">
+          <h1 class="titulo__arriba">Selecciona tu Método de Pago</h1>
+
+          <div class="accordion accordion-flush" id="accordionFlushPagos">
+            
+            <!-- ACORDEÓN 1: TARJETA DE CRÉDITO / DÉBITO -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="flush-collapseOne"
+                >
+                  <span class="metodo__titulo">Tarjeta de Crédito / Débito</span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushPagos"
+              >
+                <div class="accordion-body">
+                  <div class="tarjeta__contenedor">
+                    
+                    <!-- TARJETA VISUAL -->
+                    <div class="tarjeta__visual">
+                      <div class="tarjeta__superior">
+                        <div class="tarjeta__chip"></div>
+                        <img src="img/nexora_logo.png" alt="Logo" class="tarjeta__logo" />
+                      </div>
+                      <div class="tarjeta__numero">1234 5678 9012 3454</div>
+                      <div class="tarjeta__fecha">08/28</div>
+                      <div class="tarjeta__inferior">
+                        <span class="tarjeta__titular">NOMBRE DEL TITULAR</span>
+                        <div class="tarjeta__circulos">
+                          <span class="circulo__rojo"></span>
+                          <span class="circulo__amarillo"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- FORMULARIO TARJETA -->
+                    <form class="tarjeta__formulario">
+                      <div class="campo__grupo">
+                        <p class="campo__etiqueta">Número de tarjeta</p>
+                        <div class="campo__caja">
+                          <input type="text" class="campo__input" placeholder="Número de tarjeta" />
+                          <div class="campo__marcas">
+                            <img src="img/visa.svg" alt="Visa" />
+                            <img src="img/mc.svg" alt="MC" />
+                            <img src="img/amex.svg" alt="Amex" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="campo__grupo">
+                        <p class="campo__etiqueta">Nombre del titular</p>
+                        <input type="text" class="campo__input" placeholder="Nombre del titular" />
+                      </div>
+
+                      <div class="fila__inputs">
+                        <div class="campo__mitad">
+                          <p class="campo__etiqueta">Expiración (MM/AA)</p>
+                          <input type="text" class="campo__input" placeholder="MM/AA" />
+                        </div>
+                        <div class="campo__mitad">
+                          <p class="campo__etiqueta">CVV</p>
+                          <input type="text" class="campo__input" placeholder="CVV" />
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACORDEÓN 2: YAPE / PLIN CON TU QR -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <span class="metodo__titulo">Yape / Plin (Pago rápido con QR)</span>
+                  <span class="metodo__imagenes">
+                    <img src="img/yape.svg" alt="Yape" />
+                    <img src="img/plin.svg" alt="Plin" />
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushPagos"
+              >
+                <div class="accordion-body text-center">
+                  <p class="mb-2" style="font-size: 13px;">Escanea el código QR institucional de NEXORA 2.0 con tu app Yape o Plin:</p>
+                  <!-- TU CÓDIGO QR -->
+                  <img src="img/qr.jpeg" alt="Código QR Yape Plin" style="width: 150px; height: 150px; border-radius: 8px; border: 1px solid #DFE0E0; object-fit: cover;" />
+                  <p class="mt-2 text-muted" style="font-size: 11px;">Envía tu número de operación o captura al finalizar el pago.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACORDEÓN 3: TRANSFERENCIA BANCARIA -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <span class="metodo__titulo">Transferencia Bancaria</span>
+                  <span class="metodo__bancos">
+                    <span class="banco__etiqueta">BCP</span>
+                    <span class="banco__etiqueta">Interbank</span>
+                    <span class="banco__etiqueta">BBVA</span>
+                    <span class="banco__etiqueta">Scotiabank</span>
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushPagos"
+              >
+                <div class="accordion-body">
+                  Realiza una transferencia directa a nuestras cuentas corrientes autorizadas en soles y dólares sin cobros adicionales de comisiones.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: RESUMEN DE COMPRA -->
+        <div class="pago__derecha">
+          <div class="resumen__caja">
+            <h2 class="titulo__abajo">Resumen de tu Compra</h2>
+
+            <div class="producto__item">
+              <img src="img/buds8.avif" alt="Card 1" class="producto__foto" />
+              <div class="producto__info">
+                <p class="producto__nombre">Redmi Buds 8 Lite</p>
+                <p class="producto__detalle">NEXORA 2.0</p>
+                <p class="producto__detalle">Cantidad: 1</p>
+              </div>
+              <div class="producto__precio">S/ 100.00</div>
+            </div>
+
+            <div class="producto__item">
+              <img src="img/saxslade.avif" alt="Card 2" class="producto__foto" />
+              <div class="producto__info">
+                <p class="producto__nombre">Saxofón alto SLADE en Mib</p>
+                <p class="producto__detalle">NEXORA 2.0</p>
+                <p class="producto__detalle">Cantidad: 1</p>
+              </div>
+              <div class="producto__precio">S/ 1200.00</div>
+            </div>
+
+            <hr class="resumen__linea" />
+
+            <div class="resumen__fila">
+              <span>Subtotal:</span>
+              <span class="resumen__valor">S/ 1300.00</span>
+            </div>
+
+            <div class="resumen__fila">
+              <span>Envío Internacional:</span>
+              <span class="resumen__gratis">GRATIS</span>
+            </div>
+
+            <div class="resumen__total">
+              <span>Total:</span>
+              <span>S/ 1300.00</span>
+            </div>
+
+            <button type="button" class="boton__pagar">PAGAR AHORA</button>
+
+            <div class="garantia__fila">
+              <div class="garantia__item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Garantía NEXORA</span>
+              </div>
+              <div class="garantia__item">
+                <i class="fa-solid fa-rotate-left"></i>
+                <span>Devolución 30 días</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <br /><br /><br />
+
+    <!-- FOOTER -->
+    <footer class="site-footer pt-5 pb-4">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mb-5 g-4">
+          <div class="col-lg-6">
+            <div class="footer__brand">
+              <img
+                src="img/nexora_logo.png"
+                alt="Logotipo Nexora"
+                class="mb-3 footer__logo"
+                style="filter: brightness(0) invert(1)"
+              />
+              <p class="footer__tagline mb-0">
+                En NEXORA queremos brindarte la mejor experiencia de compras online.
+                <span class="text-accent fw-medium">¡Gracias por preferirnos!</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-lg-end">
+            <p class="small text-uppercase tracking-wider mb-2 opacity-50 text-white" style="font-size: 11px">
+              Medios de pago autorizados
+            </p>
+            <div class="footer__payments d-flex flex-wrap gap-4 justify-content-lg-end align-items-center">
+              <span title="Visa"><img src="img/visa.svg" alt="Visa" /></span>
+              <span title="Mastercard"><img src="img/mc.svg" alt="Mastercard" /></span>
+              <span title="American Express"><img src="img/amex.svg" alt="Amex" /></span>
+              <span title="Dinners club"><img src="img/diners.svg" alt="Diners" /></span>
+              <span title="Yape"><img src="img/yape.svg" alt="Yape" /></span>
+              <span title="Plin"><img src="img/plin.svg" alt="Plin" /></span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer__divisor my-4" />
+
+        <div class="row g-4 pt-3">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+            <h5 class="footer__titulo mb-4">Mapa del sitio</h5>
+            <ul class="list-unstyled footer__lista">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contactos.html">Promociones</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-5 col-lg-4 order-sm-first order-md-0">
+            <h5 class="footer__titulo mb-4">Secciones</h5>
+            <div class="row">
+              <div class="col-6">
+                <ul class="list-unstyled footer__lista">
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="login.html">Registro</a></li>
+                  <li><a href="pagos.html">Pagos</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled footer__lista">
+                  <li><a href="#">Soporte Técnico</a></li>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+            <h5 class="footer__titulo mb-4">Transparencia</h5>
+            <ul class="list-unstyled footer__lista mb-4">
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+              <li><a href="#">Derechos de Consumidor</a></li>
+            </ul>
+            <h5 class="footer__titulo mb-2" style="font-size: 13px">Control de Calidad</h5>
+            <a href="#" class="footer__btn text-decoration-none small">
+              <i class="fa-solid fa-star-half-stroke me-1 text-accent"></i> Evalúa tu experiencia
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-12 col-lg-3">
+            <h5 class="footer__titulo mb-4">Síguenos</h5>
+            <div class="d-flex gap-3 mb-4">
+              <a href="#" class="footer__red" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="footer__red" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="footer__red" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <a href="#" class="footer__reclamaciones d-flex align-items-center gap-3 p-3 text-decoration-none">
+              <i class="fa-solid fa-book-open fs-4"></i>
+              <div>
+                <div class="reclamaciones__arriba">LIBRO DE</div>
+                <div class="reclamaciones__abajo">RECLAMACIONES</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-3 border-top border-muted-subtle">
+          <div class="col text-center opacity-50">
+            <p class="small mb-0" style="font-size: 12px; letter-spacing: 0.5px">
+              &copy; 2026 NEXORA. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
